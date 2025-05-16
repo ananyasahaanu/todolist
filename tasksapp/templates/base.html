@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{% block title %}My Django App{% endblock %}</title>
+
+  <style>
+    body {
+      background-color: #f0f4f8;  /* light blue background */
+      margin: 0;
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+      position: relative;
+      padding-bottom: 50px; /* space for footer */
+    }
+
+    .container {
+      background: white;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      text-align: center;
+      max-width: 600px;
+      width: 90%;
+      margin: 40px auto;
+      animation: fadeIn 1.5s ease forwards;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px 0;
+      font-size: 14px;
+      color: #555;
+      background-color: #eaeaea;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      box-shadow: 0 -1px 5px rgba(0,0,0,0.1);
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+  
+  {% block extra_head %}{% endblock %}
+</head>
+<body>
+
+  {% block content %}{% endblock %}
+
+  <footer>
+    &copy; Copyright 2025 Ananya Saha
+  </footer>
+
+  {% block extra_scripts %}{% endblock %}
+</body>
+</html>
