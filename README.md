@@ -85,5 +85,3 @@ This project is licensed under the MIT License.
 
 ```
 
-Would you like me to help you generate a `requirements.txt` file next?
-```
