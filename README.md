@@ -1,5 +1,3 @@
-Sure! Here’s a simple, clear README.md template tailored for your **tasknest** Django project with tasks, user registration, and login:
-
 ````markdown
 # TaskNest
 
